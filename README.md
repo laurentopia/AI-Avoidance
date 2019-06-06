@@ -4,17 +4,22 @@
 The purpose of this repo is to track progress of a thing that'll nudge a flight controller to avoid obstacles.
 
 ## What we have so far
-Using one camera, the NN hardware can recognize obstacles with a pretty bad accuracy. It doesn't recognize people so I added faces and bodies in the training set.
+Using one camera, the NN hardware can recognize obstacles. The accuracy is bad, for example my face isn't an obstacle, so I added images of people in the obstacle folder, let's see if it's better.
 
 ## Hardware
-[Maix Bit](https://github.com/laurentopia/Learning-AI/wiki/Maix-Bit-hardware)
+[Maix Bit](https://github.com/laurentopia/Learning-AI/wiki/Maix-Bit-hardware) which is small, low power consumption, easy to develop on.
 
 ![image](https://user-images.githubusercontent.com/26075468/58364077-54bc4f00-7e63-11e9-8b3d-971d954cdd14.jpg)
 
 ## Software
-It's all python
+It's all python using keras as NN frontend, the software environment was [setup on Windows 10 using Conda](https://github.com/laurentopia/Learning-AI/wiki/Setting-up-Windows-10).
+
 Training script based on [Zipen's mobilenet example](https://bbs.sipeed.com/t/topic/682): train.py
-The resulting trained network: avoidance.hl5
+
+The resulting trained model: avoidance.hl5
+
+Model converted to K210 format using [Maix Toolbox](https://github.com/sipeed/Maix_Toolbox) : avoidance.kmodel
+
 Script that runs on the Maix: boot.py
 
 
