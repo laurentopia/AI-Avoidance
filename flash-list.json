@@ -1,0 +1,10 @@
+{
+    "version": "0.1.0",
+    "files": [
+      {
+        "address": 0x200000,
+        "bin": "avoidance.kmodel",
+        "sha256Prefix": false
+      }
+    ]
+  }

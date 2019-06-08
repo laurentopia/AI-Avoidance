@@ -1,0 +1,1 @@
+C:\ProgramData\Anaconda3\Scripts\activate.bat tf_gpu & cd E:\AI\test1 avoidance\test 2 & cd e: & tflite_convert --keras_model_file .\avoidance.h5 --output_file .\avoidance.tflite  & .\ncc\ncc.exe -i tflite -o k210model --dataset .\training avoidance.tflite .\avoidance.kmodel

@@ -1,0 +1,4 @@
+clear
+obstacle
+too high
+too low
