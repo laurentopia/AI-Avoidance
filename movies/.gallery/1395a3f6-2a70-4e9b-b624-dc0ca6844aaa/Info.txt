@@ -1,2 +1,0 @@
-Database Name: Local Database
-User Name: guest
